@@ -1,6 +1,16 @@
 .heading-primary {
     font-size: 15rem;
     line-height: 1;
+
+    &-top {
+        display: inline-block;
+        margin-left: -2rem;
+    }
+
+    &-bottom {
+        display: inline-block;
+        margin-left: 10rem;
+    }
 }
 
 .heading-secondary {

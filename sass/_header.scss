@@ -2,7 +2,77 @@
 
 
     &__text {
-        font-size: 2.4rem;
-        line-height: 1.4rem;
+
+        position: relative;
+        padding: 6rem 0;
+        max-width: 55rem;
+        margin-left: 25vw;
+
+        p {
+            font-size: 2.4rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            margin-top: 2rem;
+        }
     }
+
+    &__container {
+        max-width: 140rem;
+        margin: 0 auto;
+    }
+
+    &__content {
+        height: 100%;
+        position: relative;
+
+        .heading {
+            max-width: 80rem;
+            min-width: 75rem;
+            margin-left: 17vw;
+            position: relative;
+
+            &__img {
+                position: absolute;
+                top: 70%;
+                left: 85%;
+
+
+                &>* {
+                    display: block;
+
+                }
+
+
+                &-0 {}
+
+                &-1 {}
+
+                &-2 {
+                    position: absolute;
+                    top: 60%;
+                    left: -50%;
+                }
+            }
+        }
+
+        .world-class {
+            display: inline-block;
+            position: relative;
+            top: 40px;
+            left: -10px;
+        }
+    }
+}
+
+.scroll {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+    &-wrap {
+        width: 100%;
+    }
+
 }
