@@ -1,0 +1,32 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    align-items: center;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav {
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+
+        transition: all .2s;
+
+    }
+
+    &__link:focus {
+        font-weight: 700;
+    }
+}
