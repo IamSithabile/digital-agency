@@ -6,4 +6,58 @@
     cursor: pointer;
     color: var(--black);
     display: inline-block;
+
+    &__transparent {
+        border: 1px solid var(--white);
+        padding: 1rem 2rem;
+        border-radius: 30rem;
+        cursor: pointer;
+        color: var(--white);
+        display: inline-block;
+
+        &:focus {
+            background-color: var(--tertiary-color);
+            color: var(--black);
+            border: none;
+        }
+
+
+    }
+}
+
+.card {
+
+    &__services {
+        background-color: rgba(#353F5B, .8);
+        padding: 8rem 4rem;
+        transition: all .4s;
+        box-shadow: 0 .1rem .5rem rgba(#fff, .2);
+
+        &:hover {
+            border: 1px solid #9747ff;
+            transform: scale(1.05);
+        }
+
+
+        &>* {
+            margin-bottom: 2rem;
+        }
+
+
+        &--1 {
+            border-radius: 50px 0px 0px 0px;
+        }
+
+        &--2 {
+            border-radius: 0px 50px 0px 0px;
+        }
+
+        &--3 {
+            border-radius: 0px 0px 0px 50px;
+        }
+
+        &--4 {
+            border-radius: 0px 0px 50px 0px;
+        }
+    }
 }

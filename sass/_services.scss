@@ -1,0 +1,26 @@
+.services {
+    padding: 15rem 0;
+
+    .container {
+        text-align: center;
+    }
+
+    .heading-secondary {
+        text-transform: capitalize;
+    }
+
+    &__grid {
+        margin: 8rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        text-align: start;
+
+    }
+
+    .btn__transparent {
+
+        text-align: center;
+
+    }
+}
