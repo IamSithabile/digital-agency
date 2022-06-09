@@ -19,10 +19,65 @@
     box-sizing: inherit;
 }
 
+@mixin responsive ($bp) {
+
+    @if $bp ==sm {
+        @media screen and (max-width: 600px) {
+            @content
+        }
+
+    }
+
+    @if $bp ==md {
+        @media screen and (max-width: 1200px) {
+            @content
+        }
+
+    }
+
+    @if $bp ==lg {
+        @media screen and (max-width: 1500px) {
+            @content
+        }
+
+    }
+}
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+
+    // @include responsive(lg) {
+    //     font-size: 50%;
+    // }
+
+    // @include responsive(md) {
+    //     font-size: 45%;
+    // }
+
+    // @include responsive(sm) {
+    //     font-size: 40%;
+    // }
+
+
+
+    @include responsive(lg) {
+        font-size: 50%;
+    }
+
+    @include responsive(md) {
+        font-size: 45%;
+    }
+
+    @include responsive(sm) {
+        font-size: 40%;
+    }
 }
+
+
+
+
 
 body {
     background-color: var(--bg-color);

@@ -1,0 +1,83 @@
+.projects {
+    padding: 15rem 0;
+    text-align: center;
+
+    .heading-secondary {
+        margin-bottom: 4rem;
+    }
+
+    &__tab {
+
+        &--content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+
+
+
+            &-1 {
+                flex: 0 0 45%;
+
+                &>* {
+                    margin-bottom: 3rem;
+                }
+            }
+
+            &-2 {
+                flex: 0 0 45%;
+
+                &>* {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    &__img {
+
+        &--1 {
+            display: block;
+            width: 100%;
+        }
+
+        &--2 {
+            display: block;
+            width: 100%;
+        }
+    }
+
+
+}
+
+// Bootstrap tab
+
+.nav-tabs {
+    border: none;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    .nav-link {
+        border-radius: none;
+        color: var(--white);
+
+    }
+
+
+}
+
+.active {
+    // color: var(--tertiary-color);
+    background-color: transparent;
+}
+
+
+.nav-tabs .nav-link.active {
+    color: var(--tertiary-color);
+    background-color: transparent;
+    border: none;
+}
+
+.tab-pane {
+    display: flex;
+}

@@ -6,6 +6,7 @@
     cursor: pointer;
     color: var(--black);
     display: inline-block;
+    font-size: 1.8rem;
 
     &__transparent {
         border: 1px solid var(--white);
@@ -23,6 +24,7 @@
 
 
     }
+
 }
 
 .card {
