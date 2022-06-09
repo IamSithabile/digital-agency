@@ -1,0 +1,20 @@
+.testimonials {
+    padding: 10rem;
+    text-align: center;
+
+    &__carousel {
+        padding-top: 8rem;
+    }
+}
+
+/// Boostrap carousel
+
+.carousel-control-prev-icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    color: var(--black);
+    background-color: var(--tertiary-color);
+    content: "&larr;";
+    background-image: none;
+}
