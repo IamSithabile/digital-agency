@@ -4,12 +4,27 @@
     width: 100%;
     background-image: linear-gradient(to right, var(--tertiary-color) 0%, var(--tertiary-color) 40%, var(--secondary-color) 40%);
 
+    @include responsive(sm) {
+        background-image: none;
+        padding: 10rem 5rem;
+    }
+
     &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 8rem;
         justify-content: center;
         align-content: center;
+        align-items: center;
+
+        @include responsive(sm) {
+            grid-template-columns: none;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @include responsive(md) {
+            grid-gap: 4rem;
+        }
     }
 
     &__image {
@@ -43,6 +58,10 @@
 
     &__text {
         align-self: center;
+
+        @include responsive(sm) {
+            grid-row: 1 / 2;
+        }
 
         h2 {
             margin-bottom: 4rem;

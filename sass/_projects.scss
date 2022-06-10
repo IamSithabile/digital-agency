@@ -2,6 +2,10 @@
     padding: 15rem 0;
     text-align: center;
 
+    @include responsive(sm) {
+        padding: 10rem 0;
+    }
+
     .heading-secondary {
         margin-bottom: 4rem;
     }

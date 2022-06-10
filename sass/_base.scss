@@ -11,6 +11,20 @@
 
 }
 
+
+//To check which elements are over flowing enable the outline
+///////////////////////////////////////
+// * {
+//     outline: 1px solid green;
+// }
+
+///////////////////////////////////
+
+
+section {
+    width: 100%;
+}
+
 *,
 *::after,
 *::before {
@@ -19,29 +33,6 @@
     box-sizing: inherit;
 }
 
-@mixin responsive ($bp) {
-
-    @if $bp ==sm {
-        @media screen and (max-width: 600px) {
-            @content
-        }
-
-    }
-
-    @if $bp ==md {
-        @media screen and (max-width: 1200px) {
-            @content
-        }
-
-    }
-
-    @if $bp ==lg {
-        @media screen and (max-width: 1500px) {
-            @content
-        }
-
-    }
-}
 
 html {
     font-size: 62.5%;
@@ -89,6 +80,7 @@ body {
 
     height: 100vh;
     width: 100vw;
+
 }
 
 a {
@@ -105,3 +97,162 @@ ul {
     max-width: 120rem;
     margin: 0 auto;
 }
+
+.ellipse {
+
+
+
+    &__blue {
+        position: absolute;
+        width: 34rem;
+        height: 34rem;
+        left: 0;
+        top: 14rem;
+
+        background-color: #7C3EFF;
+        filter: blur(25rem);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    &__orange {
+        position: absolute;
+        width: 22.5rem;
+        height: 22.5rem;
+        right: 1rem;
+        top: 104.2rem;
+
+        background: #FFC93E;
+        filter: blur(25rem);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    &__pink {
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        right: 0rem;
+        top: 10rem;
+
+        background: #BE229C;
+        filter: blur(20rem);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    &__green {
+        position: absolute;
+        width: 24.2rem;
+        height: 24.2rem;
+        left: 1.4rem;
+        top: 105rem;
+
+        background: #22B5BE;
+        filter: blur(30rem);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    &__solution {
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        right: 2rem;
+        top: 350rem;
+
+        background: #22B5BE;
+        opacity: 0.6;
+        filter: blur(30rem);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    &__projects {
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        right: 10rem;
+        top: 500rem;
+
+        background: #7C3EFF;
+        opacity: 0.4;
+        filter: blur(30rem);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    &__testimonial {
+        position: absolute;
+        width: 30rem;
+        height: 24rem;
+        right: 5rem;
+        top: 600rem;
+
+        background: #BE229C;
+        opacity: 1;
+        filter: blur(30rem);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    &__footer {
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        right: 5rem;
+        top: 650rem;
+
+        background: #FFC93E;
+        opacity: 0.6;
+        filter: blur(500px);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+}
+
+.star {
+
+    &>* {
+        position: absolute;
+        width: 5.4rem;
+        height: 5.4rem;
+        mask: url(/img/Star.svg);
+        mask-size: contain;
+
+        animation: stars infinite 2s;
+        background: #FFFFFF;
+
+
+
+    }
+
+    &-1 {
+        left: 4rem;
+        top: 24.6rem;
+    }
+
+    &-2 {
+        right: 8rem;
+        top: 14.4rem;
+    }
+
+
+    &-3 {}
+}
+
+@keyframes stars {
+
+    0% {}
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+// .grid {
+//     position: absolute;
+//     height: 43rem;
+//     width: 49rem;
+//     background-color: var(--white);
+//     top: 0;
+//     left: 0%;
+
+//     mask: url(/img/grid.svg);
+// }

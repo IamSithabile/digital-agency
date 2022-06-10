@@ -1,0 +1,23 @@
+@mixin responsive ($bp) {
+
+    @if $bp ==sm {
+        @media screen and (max-width: 600px) {
+            @content
+        }
+
+    }
+
+    @if $bp ==md {
+        @media screen and (max-width: 80em) {
+            @content
+        }
+
+    }
+
+    @if $bp ==lg {
+        @media screen and (max-width: 120em) {
+            @content
+        }
+
+    }
+}
