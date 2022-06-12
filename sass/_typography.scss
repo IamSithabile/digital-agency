@@ -13,13 +13,18 @@
         margin-left: 25rem;
 
         @include responsive(sm) {
-            margin-left: 20rem;
+            margin-left: 10rem;
         }
     }
 
     &-bottom {
 
         margin-left: 10rem;
+
+        @include responsive(sm) {
+            display: block;
+            margin: 0;
+        }
     }
 }
 

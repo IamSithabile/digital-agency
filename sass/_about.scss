@@ -14,16 +14,12 @@
         align-items: center;
 
 
-
         @include responsive(sm) {
             justify-content: center;
             grid-template-columns: none;
             grid-template-rows: repeat(2, 1fr);
             grid-row-gap: 6rem;
         }
-
-
-
 
     }
 
@@ -36,40 +32,14 @@
 
     }
 
-    &__images {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 2rem;
+    &__image {
+        width: 100%;
 
-
-        &>* {
-            transition: all .4s;
-
-            @include responsive(md) {
-                width: 90%;
-            }
+        &--wrap {
+            display: block;
+            width: 100%;
         }
 
-        &-1 {
-            justify-self: end;
-        }
-
-        &-2 {
-            align-self: flex-end;
-
-
-        }
-
-        &-3 {
-            justify-self: start;
-
-        }
-
-        &-4 {
-            justify-self: end;
-
-        }
     }
 
     &__experience {

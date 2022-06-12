@@ -14,7 +14,7 @@
 <body>
 
 
-    <div class="ellipses">x
+    <div class="ellipse">
         <div class="ellipse__blue"></div>
         <div class="ellipse__orange"></div>
         <div class="ellipse__green"></div>
@@ -30,7 +30,6 @@
     <div class="star">
         <div class="star-1"></div>
         <div class="star-2"></div>
-        <div class="star-3"></div>
     </div>
     <header class="header">
         <div class="nav-container">
@@ -74,8 +73,10 @@
                     <img src="img/image-2.png" alt="Working collegues " class="heading__img-2">
                 </div>
                 <div class="scroll-wrap">
+                    <a href="#about">
+                        <img src="img/scroll.svg" alt="Scroll down picture" class="scroll">
+                    </a>
 
-                    <img src="img/scroll.png" alt="Scroll down picture" class="scroll">
                 </div>
 
             </div>
@@ -83,7 +84,7 @@
 
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__grid">
 
@@ -113,11 +114,9 @@
                     <a href="#" class="btn">Contact Us &nearr;</a>
                 </div>
 
-                <div class="about__images">
-                    <img src="img/image-3.png" alt="" class="about__images-1">
-                    <img src="img/image-4.png" alt="" class="about__images-2">
-                    <img src="img/image-6.png" alt="" class="about__images-4">
-                    <img src="img/image-5.png" alt="" class="about__images-3">
+                <div class="about__image--wrap">
+                    <img src="img/about-mage.png" alt="" class="about__image">
+
                 </div>
             </div>
             <div class="about__experience">
@@ -144,7 +143,12 @@
     <section class="solution ">
         <div class="container solution__grid">
             <div class="solution__image--wrap">
-                <img src="img/image-7.png" alt="collegues in a workspace" class="solution__image">
+
+                <picture class="solution__image">
+                    <source srcset="/img/Group908.png" media="(max-width: 600px)">
+                    <img srcset="img/image-7.png" alt="collegues in a workspace" class="solution__image">
+
+                </picture>
             </div>
             <div class="solution__text">
                 <h2 class="heading-secondary">
@@ -195,6 +199,7 @@
             <div class="services__grid">
 
                 <div class="card__services card__services--1">
+
                     <img src="img/Group-1.svg" alt="icon" class="services__icon">
 
                     <h3 class="heading-tertiary">Content writing</h3>

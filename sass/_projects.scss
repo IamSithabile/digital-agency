@@ -3,7 +3,7 @@
     text-align: center;
 
     @include responsive(sm) {
-        padding: 10rem 0;
+        padding: 10rem 5rem;
     }
 
     .heading-secondary {
